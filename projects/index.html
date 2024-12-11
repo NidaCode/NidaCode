@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../src/style/main.css" rel="stylesheet">
+        <title>NidaCreator - Hello World</title>
+        <script src="../src/scripts/filter.js"></script>
+        <script src="../src/scripts/redirect.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="mainTitle">NidaCode</h1>
+            <div class="menu left btn-group">
+                <a href="?" class="btn default left" style="color:#bbe4e9; background:#253335;">Projects</a>
+                <a href="../about-me/" class="btn default left">About me</a>
+                <a href="../contacts/" class="btn default left">Contacts</a>
+                <a href="../random/index.html" class="btn default left">Random</a></div>
+        </div>
+        <h1 class="center mainTitle2">Hello World!</h1>
+        <div class="container">
+            <div class="image">
+                <img src="../src/img/nc_icon.png" class="infoImageLeft"></img>
+            </div>
+            <div class="infoContainer">
+                <h1 class="infoTitle">My projects</h1>
+                <p class="info">These are my code projects that I made a long the way:</p>
+            </div>
+            <br>
+            <br>
+            
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="infoContainer">
+                <h1 class="infoTitle">My projects (and the ones im working on):</h1>
+                <input type="text" placeholder="Filer search.." name="search" class="filterSearch" id="filterSearch" onkeyup="filterSearch()">
+                <p style="color:white; font-size:13px;">(Search a keyword, Project Name, languages)</p>
+                <div class="itemHolder" id="itemHolderFilter">
+                    
+                    <div class="item2 left">
+                        <img src="../src/img/projects/nida_chess.png" class="imageItem"></img>
+                        <p class="itemTitle">Nida Chess</p>
+                        <p class="itemDescription">C#, xaml</p>
+                    </div>
+                    <div class="item2 left">
+                        <img src="../src/img/projects/no_img_yet.png" class="imageItem"></img>
+                        <p class="itemTitle">Discomfort Rooms Map</p>
+                        <p class="itemDescription">Minecraft</p>
+                    </div>
+                    <div class="item2 left">
+                        <img src="../src/img/projects/harp_web.png" class="imageItem"></img>
+                        <p class="itemTitle">Harp web</p>
+                        <p class="itemDescription">php, html, mysql, css, js</p>
+                    </div>
+                    <div class="item2 left">
+                        <img src="../src/img/projects/no_img_yet.png" class="imageItem"></img>
+                        <p class="itemTitle">Mtr core facility Mod</p>
+                        <p class="itemDescription">Minecraft, Java</p>
+                    </div>
+                    <div class="item2 left">
+                        <img src="../src/img/projects/foro_de_mentores.png" class="imageItem"></img>
+                        <p class="itemTitle">Foro de Mentores</p>
+                        <p class="itemDescription">php, html, mysql, css, js</p>
+                    </div>
+                    <div class="item2 left">
+                        <img src="../src/img/projects/no_img_yet.png" class="imageItem"></img>
+                        <p class="itemTitle">Monster Invasion Map</p>
+                        <p class="itemDescription">Minecraft</p>
+                    </div>
+                    <div class="item2 left">
+                        <img src="../src/img/projects/no_img_yet.png" class="imageItem"></img>
+                        <p class="itemTitle">Strongest Battlegrounds Mod</p>
+                        <p class="itemDescription">Minecraft, Java</p>
+                    </div>
+                    <div class="item2 left">
+                        <img src="../src/img/projects/tic_tac_toe.png" class="imageItem"></img>
+                        <p class="itemTitle">tic tac toe, console</p>
+                        <p class="itemDescription">C#</p>
+                    </div>
+                    <div class="item2 left">
+                        <img src="../src/img/projects/no_img_yet.png" class="imageItem"></img>
+                        <p class="itemTitle">Exzelent</p>
+                        <p class="itemDescription">Python</p>
+                    </div>
+                    <div class="item2 left">
+                        <img src="../src/img/projects/third_air.png" class="imageItem"></img>
+                        <p class="itemTitle">Third Air</p>
+                        <p class="itemDescription">Python, Discord</p>
+                    </div>
+                </div>    
+                <!--p class="info">These are my code projects that I made a long the way:</p-->
+            </div>
+            <br>
+            <br>
+            
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="infoContainer">
+                <div class="itemHolder">
+                    <h1 class="infoTitle">Programming languages I use:</h1>
+                    <p style="color:white; font-size:13px;">(Press any of these, and it will be used as a keyword)</p>
+                    <div class="item left" onclick="document.getElementById('filterSearch').value = 'php'; filterSearch()">
+                        <img src="../src/img/languages/php.png" class="imageItem"></img>
+                        <p class="itemTitle">Php</p>
+                    </div>
+                    <div class="item left" onclick="document.getElementById('filterSearch').value = 'python'; filterSearch()">
+                        <img src="../src/img/languages/python.png" class="imageItem"></img>
+                        <p class="itemTitle">Python</p>
+                    </div>
+                    <div class="item left" onclick="document.getElementById('filterSearch').value = 'js'; filterSearch()">
+                        <img src="../src/img/languages/js.png" class="imageItem"></img>
+                        <p class="itemTitle">Java Script</p>
+                    </div>
+                    <div class="item left" onclick="document.getElementById('filterSearch').value = 'css'; filterSearch()">
+                        <img src="../src/img/languages/css.png" class="imageItem"></img>
+                        <p class="itemTitle">Css</p>
+                    </div>
+                    <div class="item left" onclick="document.getElementById('filterSearch').value = 'html'; filterSearch()">
+                        <img src="../src/img/languages/html5.png" class="imageItem"></img>
+                        <p class="itemTitle">Html</p>
+                    </div>
+                    <div class="item left" onclick="document.getElementById('filterSearch').value = 'c#'; filterSearch()">
+                        <img src="../src/img/languages/csharp.png" class="imageItem"></img>
+                        <p class="itemTitle">C#</p>
+                    </div>
+                    
+                    <div class="item left" onclick="document.getElementById('filterSearch').value = 'java'; filterSearch()">
+                            <img src="../src/img/languages/java.png" class="imageItem"></img>
+                            <p class="itemTitle">Java</p>
+                    </div>
+                    <div class="item left" onclick="document.getElementById('filterSearch').value = 'mysql'; filterSearch()">
+                        <img src="../src/img/languages/mysql.png" class="imageItem"></img>
+                        <p class="itemTitle">MySql</p>
+                    </div>
+                    <div class="item left" onclick="document.getElementById('filterSearch').value = 'minecraft'; filterSearch()">
+                            <img src="../src/img/languages/minecraft_cube.webp" class="imageItem"></img>
+                            <p class="itemTitle">Minecraft, datapacks</p>
+                    </div>
+                    <div class="item left" onclick="document.getElementById('filterSearch').value = 'scratch'; filterSearch()">
+                        <img src="../src/img/languages/scratch.png" class="imageItem"></img>
+                        <p class="itemTitle">Scratch</p>
+                </div>
+                </div>
+                <!--p class="info">These are my code projects that I made a long the way:</p-->
+            </div>
+            <br>
+            <br>
+            
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    if (window.location.search == "?section=languages") {
+        window.scrollTo({
+        top: 100000,
+        left: 0,
+        behavior: "smooth",
+        });
+    }       
+</script>

@@ -1,0 +1,21 @@
+function filterSearch() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('filterSearch');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("itemHolderFilter");
+  li = ul.getElementsByClassName('item2');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("p")[0];
+    b = li[i].getElementsByTagName("p")[1];
+    txtValue = a.textContent || a.innerText;
+    txtValue = txtValue+ (b.textContent || b.innerText);
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
